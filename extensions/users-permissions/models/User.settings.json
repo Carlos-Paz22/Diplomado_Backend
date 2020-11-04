@@ -74,7 +74,7 @@
         "images"
       ],
       "plugin": "upload",
-      "required": true
+      "required": false
     },
     "productos": {
       "via": "user",

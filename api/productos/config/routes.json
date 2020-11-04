@@ -1,52 +1,66 @@
 {
-  "routes": [
-    {
-      "method": "GET",
-      "path": "/productos",
-      "handler": "productos.find",
-      "config": {
-        "policies": []
-      }
-    },
-    {
-      "method": "GET",
-      "path": "/productos/count",
-      "handler": "productos.count",
-      "config": {
-        "policies": []
-      }
-    },
-    {
-      "method": "GET",
-      "path": "/productos/:id",
-      "handler": "productos.findOne",
-      "config": {
-        "policies": []
-      }
-    },
-    {
-      "method": "POST",
-      "path": "/productos",
-      "handler": "productos.create",
-      "config": {
-        "policies": []
-      }
-    },
-    {
-      "method": "PUT",
-      "path": "/productos/:id",
-      "handler": "productos.update",
-      "config": {
-        "policies": []
-      }
-    },
-    {
-      "method": "DELETE",
-      "path": "/productos/:id",
-      "handler": "productos.delete",
-      "config": {
-        "policies": []
-      }
-    }
-  ]
+    "routes": [
+
+
+        {
+
+            "method": "GET",
+            "path": "/productos/me",
+            "handler": "productos.me",
+            "config": {
+                "policies": []
+            }
+
+
+        },
+
+        {
+            "method": "GET",
+            "path": "/productos",
+            "handler": "productos.find",
+            "config": {
+                "policies": []
+            }
+        },
+        {
+            "method": "GET",
+            "path": "/productos/count",
+            "handler": "productos.count",
+            "config": {
+                "policies": []
+            }
+        },
+        {
+            "method": "GET",
+            "path": "/productos/:id",
+            "handler": "productos.findOne",
+            "config": {
+                "policies": []
+            }
+        },
+        {
+            "method": "POST",
+            "path": "/productos",
+            "handler": "productos.create",
+            "config": {
+                "policies": []
+            }
+        },
+        {
+            "method": "PUT",
+            "path": "/productos/:id",
+            "handler": "productos.update",
+            "config": {
+                "policies": []
+            }
+        },
+        {
+            "method": "DELETE",
+            "path": "/productos/:id",
+            "handler": "productos.delete",
+            "config": {
+                "policies": []
+            }
+        }
+    ]
 }

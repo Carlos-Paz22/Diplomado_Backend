@@ -22,11 +22,11 @@
     },
     "descripcion": {
       "type": "text",
-      "required": true
+      "required": false
     },
     "precio": {
       "type": "decimal",
-      "required": true
+      "required": false
     },
     "categorias": {
       "collection": "categorias",
