@@ -59,26 +59,13 @@
       "plugin": "users-permissions",
       "configurable": false
     },
-    "celular": {
-      "type": "biginteger",
-      "required": true
-    },
-    "social": {
-      "type": "text",
-      "required": true
-    },
-    "logo": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images"
-      ],
-      "plugin": "upload",
-      "required": false
-    },
     "productos": {
+      "collection": "productos",
+      "via": "user"
+    },
+    "empresas": {
       "via": "user",
-      "collection": "productos"
+      "model": "empresas"
     }
   }
 }

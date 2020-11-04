@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "productos",
+  "collectionName": "empresas",
   "info": {
-    "name": "Productos",
+    "name": "Empresas",
     "description": ""
   },
   "options": {
@@ -11,32 +11,28 @@
     "draftAndPublish": false
   },
   "attributes": {
-    "imagen": {
+    "social": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "logo": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
         "images"
       ],
       "plugin": "upload",
-      "required": true
-    },
-    "descripcion": {
-      "type": "text",
       "required": false
     },
-    "precio": {
-      "type": "decimal",
-      "required": false
-    },
-    "categorias": {
-      "collection": "categorias",
-      "via": "productos"
+    "celular": {
+      "type": "integer"
     },
     "user": {
-      "via": "productos",
       "plugin": "users-permissions",
-      "collection": "user",
-      "dominant": true
+      "model": "user",
+      "via": "empresas"
     }
   }
 }
