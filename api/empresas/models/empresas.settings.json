@@ -27,12 +27,12 @@
       "required": false
     },
     "celular": {
-      "type": "integer"
+      "type": "string"
     },
     "user": {
       "plugin": "users-permissions",
       "model": "user",
-      "via": "empresas"
+      "via": "empresa"
     }
   }
 }

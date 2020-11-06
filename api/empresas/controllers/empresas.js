@@ -25,15 +25,15 @@ module.exports = {
         const user = ctx.state.user;
 
         if (ctx.is('multipart')) {
-            const { data, files } = parseMultipartData(ctx);
-            data.user = user.id
-            entity = await strapi.services.empresas.create(data, { files })
+            const { dataemp, files } = parseMultipartData(ctx);
+            dataemp.user = user.id 
+            entity = await strapi.services.empresas.create(dataemp, { files })
         } else {
             //Formato json
-            const data = ctx.request.body
+            const dataemp = ctx.request.body
 
-            data.user = user.id;
-            entity = await strapi.services.empresas.create(data);
+           dataemp.user = user.id; 
+            entity = await strapi.services.empresas.create(dataemp);
 
         }
 

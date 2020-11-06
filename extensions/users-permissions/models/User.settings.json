@@ -63,7 +63,7 @@
       "collection": "productos",
       "via": "user"
     },
-    "empresas": {
+    "empresa": {
       "via": "user",
       "model": "empresas"
     }
