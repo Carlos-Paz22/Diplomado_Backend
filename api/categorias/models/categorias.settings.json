@@ -16,9 +16,14 @@
       "required": true
     },
     "productos": {
-      "via": "categorias",
       "collection": "productos",
+      "via": "categorias",
       "dominant": true
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "categorias"
     }
   }
 }

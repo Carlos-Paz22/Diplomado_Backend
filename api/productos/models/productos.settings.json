@@ -29,8 +29,8 @@
       "required": false
     },
     "categorias": {
-      "collection": "categorias",
-      "via": "productos"
+      "via": "productos",
+      "collection": "categorias"
     },
     "user": {
       "via": "productos",

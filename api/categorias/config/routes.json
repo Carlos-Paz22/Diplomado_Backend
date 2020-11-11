@@ -2,6 +2,14 @@
   "routes": [
     {
       "method": "GET",
+      "path": "/categorias/me",
+      "handler": "categorias.me",
+      "config": {
+          "policies": []
+      }
+    },
+    {
+      "method": "GET",
       "path": "/categorias",
       "handler": "categorias.find",
       "config": {
