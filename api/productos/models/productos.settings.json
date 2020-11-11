@@ -29,14 +29,19 @@
       "required": false
     },
     "categorias": {
-      "via": "productos",
-      "collection": "categorias"
+      "collection": "categorias",
+      "via": "productos"
     },
     "user": {
-      "via": "productos",
       "plugin": "users-permissions",
-      "collection": "user",
-      "dominant": true
+      "model": "user",
+      "via": "productos"
+    },
+    "celular1": {
+      "type": "string"
+    },
+    "nombre": {
+      "type": "string"
     }
   }
 }
