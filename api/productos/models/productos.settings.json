@@ -42,6 +42,10 @@
     },
     "nombre": {
       "type": "string"
+    },
+    "estado": {
+      "type": "string",
+      "default": "activo"
     }
   }
 }
